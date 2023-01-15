@@ -14,7 +14,7 @@ const AboutPageBody: React.FC = () => {
             </Typography>
             <Typography variant="body1">
               개발dp 관한 내용은 &nbsp;
-              <Link href="https://github.com/good-jinu" target="_blank" rel="noopener noreferrer">
+              <Link href="https://github.com/good-jinu/awesome-food-store.git" target="_blank" rel="noopener noreferrer">
                 깃헙 레포지토리
               </Link>
               에서 확인하실 수 있습니다.
