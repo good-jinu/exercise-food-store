@@ -11,6 +11,7 @@ interface ModalProps {
 
 const StoreModal: React.FC<ModalProps> = ({ open, handleClose, selectedProduct }: ModalProps) => {
   const classes = useStyles();
+  const [desc, lastOrder] = selectedProduct.description.split("LAST ORDER");
 
   return(
     <Modal
@@ -27,9 +28,10 @@ const StoreModal: React.FC<ModalProps> = ({ open, handleClose, selectedProduct }
             <Stack direction="row" justifyContent="end" mb={2}>
               <Button onClick={handleClose} variant="outlined">×</Button>
             </Stack>
-            <Typography variant="h4" component="h2">{selectedProduct && selectedProduct.name}</Typography>
-            <Typography variant="body1">{selectedProduct && selectedProduct.description}</Typography>
-            {selectedProduct && selectedProduct.url && 
+            <Typography variant="h4" component="h2">{selectedProduct.name}</Typography>
+            <Typography variant="body1">{desc}</Typography>
+            <Typography variant="body1">LAST ORDER{lastOrder}</Typography>
+            {selectedProduct.url && 
               <Link href={selectedProduct.url} target="_blank" variant="body2">
                 홈페이지 열기
               </Link> }

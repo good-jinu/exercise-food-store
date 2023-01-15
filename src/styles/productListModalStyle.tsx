@@ -43,7 +43,10 @@ const useStyles = makeStyles((theme: Theme) => ({
       margin: '0',
     },
     [theme.breakpoints.up('md')]: {
-      margin: theme.spacing(0, 12),
+      margin: theme.spacing(0, 9),
+    },
+    [theme.breakpoints.up('lg')]: {
+      margin: theme.spacing(0, 24),
     },
   },
   modalContent: {
