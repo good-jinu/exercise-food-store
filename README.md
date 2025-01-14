@@ -1,4 +1,4 @@
-# Awesome Food Store
+# Practice Food Store
 
 > 맛집 리스트를 보여주는 웹페이지입니다.
 
